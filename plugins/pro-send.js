@@ -230,10 +230,22 @@ class ProSend {
             this.energy,
             this.silver
           );
+           this.originPlanet = null;
+      this.destPlanet = null;
+      this.origin.innerText = "???";
+      this.dest.innerText = "???";
+      this.moveTime.innerHTML = "Move time: ???";
+      this.energyLabel.innerHTML = `Energy`;
+      this.energyStats.energyPercentLabel.innerHTML = "??%";
+      this.silverStats.silverPercentLabel.innerHTML = "??%";
+      this.energyStats.energyValueLabel.innerHTML = "???";
+      this.silverStats.silverValueLabel.innerHTML = "???";
+      this.receiveMessage.innerHTML = "";
         }, 0);
       } else {
         console.log("no planet selected");
       }
+      
     };
 
     container.appendChild(this.createElem("div", "Better Move", "center"));
