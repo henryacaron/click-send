@@ -2,7 +2,7 @@
 //
 // No more clicking and dragging to move
 const { getPlanetName } = df.getProcgenUtils();
-class BetterMove {
+class ProSend {
   constructor() {
     this.origin = document.createElement("span");
     this.origin.readOnly = true;
@@ -286,4 +286,4 @@ class BetterMove {
   }
 }
 
-export default BetterMove;
+export default ProSend;
