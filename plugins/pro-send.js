@@ -227,8 +227,8 @@ class ProSend {
           let res = df.move(
             this.originPlanet.locationId,
             this.destPlanet.locationId,
-            10,
-            0
+            this.energy,
+            this.silver
           );
         }, 0);
       } else {
